@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TFG Fili</string>
+    <string name="BTconnFail">Fallo en la conexión</string>
+    <string name="BTConnected">Conectado al dispositivo: </string>
+    <string name="sBTdevNF">"Dispositivo Bluetooth no encontrado !"</string>
+    <string name="sBTstaNF">Estado: Bluetooth no encontrado</string>
+    <string name="BTEnable">Bluetooth habilitado</string>
+    <string name="sBTturON">Bluetooth activado</string>
+    <string name="BTisON">Bluetooth ya está activo</string>
+    <string name="sEnabled">Habilitado</string>
+    <string name="sDisabled">Deshabilitado</string>
+    <string name="sBTdisabl">Bluetooth deshabilitado</string>
+    <string name="BTnotOn">Bluetooth no activo</string>
+    <string name="lt_bluetooth_status">Estado del Bluetooth</string>
+    <string name="BTturOff">Bluetooth apagado</string>
+    <string name="cConnet">Conectando…</string>
+    <string name="ErrSockCrea">Error en la creación del Socket</string>
+    <string name="show_paired_devices">Mostrar dispositivos Bluetooth vinculados</string>
+    <string name="status">"Estado: "</string>
+</resources>
