@@ -2,5 +2,5 @@
 
 ## Grado en Ingenieria Informática
 
-### Universidad internacional de la Rioja [UNIR](https://www.unir.net/) 
+### Universidad internacional de La Rioja [UNIR](https://www.unir.net/) 
 
