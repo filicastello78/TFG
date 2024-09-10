@@ -56,7 +56,6 @@ public class SenderInflux extends Thread {
                                     LAT = (String) latitude_tv.getText();
                                     LON = (String) longitude_tv.getText();
 
-
                                     TEMP = (String) temp_tv.getText();
                                     RPM = (String) rpm_tv.getText();
                                     SPEED = (String) speed_tv.getText();
@@ -66,7 +65,6 @@ public class SenderInflux extends Thread {
                                     intake_manifold_air_temperature=(String) intake_manifold_air_temperature_tv.getText();
                                     air_flow_speed_maf=(String) air_flow_speed_maf_tv.getText();
 
-
                                     punto = Point
                                         .measurement("coches")
                                         .addTag("vin",VIN)                                        
@@ -75,16 +73,14 @@ public class SenderInflux extends Thread {
                                         .addField("velocidad", Integer.parseInt(SPEED))
                                         .addField("latitud", Float.parseFloat(LAT))
                                         .addField("longitud", Float.parseFloat(LON))
-
                                         .addField("presion_absoluta_colector_admisión", Integer.parseInt(intake_manifold_absolute_pressure))
                                         .addField("carga_motor", Integer.parseInt(motor_load))
                                         .addField("temperatura_aire_colector_admisión", Integer.parseInt(intake_manifold_air_temperature))
                                         .addField("caudal_aire_sensor_maf", Integer.parseInt(air_flow_speed_maf))
-
                                         .time(Instant.now(), WritePrecision.NS);
-                                    if (sw_sender_enable.isChecked()) {
-                                        writeApi.writePoint(bucket, org, punto);                                   
-                                    }
+                                   
+                                    writeApi.writePoint(bucket, org, punto);                                  
+                                   
                                 }
                                 Thread.sleep(250);
                             } catch (Exception e) {
