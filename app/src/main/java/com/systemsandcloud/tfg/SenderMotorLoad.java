@@ -12,7 +12,7 @@ public class SenderMotorLoad extends Thread {
         while (true) {
 
             try {
-                mConnectedThread.write("0104 1" + "\r" + "\n");
+                mConnectedThread.write("0104" + "\r" + "\n");
                 Thread.sleep(10);
             } catch (Exception e) {
                 e.printStackTrace();
