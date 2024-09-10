@@ -82,8 +82,9 @@ public class SenderInflux extends Thread {
                                         .addField("caudal_aire_sensor_maf", Integer.parseInt(air_flow_speed_maf))
 
                                         .time(Instant.now(), WritePrecision.NS);
-                                if (sw_sender_enable.isChecked()) {
-                                    writeApi.writePoint(bucket, org, punto);                                   
+                                    if (sw_sender_enable.isChecked()) {
+                                        writeApi.writePoint(bucket, org, punto);                                   
+                                    }
                                 }
                                 Thread.sleep(250);
                             } catch (Exception e) {
