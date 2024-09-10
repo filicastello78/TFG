@@ -13,7 +13,7 @@ public class SenderSpeed extends Thread {
 
             try {
                if ( mConnectedThread != null) {
-                   mConnectedThread.write("010D 1" + "\r" + "\n");
+                   mConnectedThread.write("010D" + "\r" + "\n");
                }
                 Thread.sleep(30);
             } catch (Exception e) {
