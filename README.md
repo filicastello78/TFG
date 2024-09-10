@@ -1,8 +1,10 @@
-# tfg
+### Trabajo de final de grado 
+
+## Grado en Ingenieria Informática
+
+# Universidad internacional de la Rioja [UNIR](https://www.unir.net/) 
 
 
-
-## Getting started
 
 To make it easy for you to get started with GitLab, here's a list of recommended next steps.
 
@@ -10,7 +12,6 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ## Add your files
 
-[UNIR](https://www.unir.net/) 
 
 ```
 cd existing_repo
