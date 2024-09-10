@@ -307,43 +307,43 @@ public class MainActivity extends AppCompatActivity {
     private void initialize() {
 
         if (mConnectedThread != null) {
-            mConnectedThread.write("ATZ"+ "\r" + "\n");
+            mConnectedThread.write("ATZ"+ "\r" + "\n");//Reset
             try {
                 Thread.sleep(200);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            mConnectedThread.write("ATPP0CSV23" + "\r" + "\n");
+            mConnectedThread.write("ATPP0CSV23" + "\r" + "\n");//115200 baudios
             try {
                 Thread.sleep(200);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            mConnectedThread.write("ATPP0CON"+ "\r" + "\n" );
+            mConnectedThread.write("ATPP0CON"+ "\r" + "\n" );//Enable Programable Parameter
             try {
                 Thread.sleep(200);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            mConnectedThread.write("ATZ" + "\r" + "\n");
+            mConnectedThread.write("ATZ" + "\r" + "\n");//Reset
             try {
                 Thread.sleep(200);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            mConnectedThread.write("ATSP0"+ "\r" + "\n");//AUTOMATIC PROTOCOL
+            mConnectedThread.write("ATSP0"+ "\r" + "\n");//Automatic protocol
             try {
                 Thread.sleep(200);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            mConnectedThread.write("ATE0"+ "\r" + "\n" );//ECHO OFF
+            mConnectedThread.write("ATE0"+ "\r" + "\n" );//echo OFF
             try {
                 Thread.sleep(200);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            mConnectedThread.write("ATH1"+ "\r" + "\n" );//ENABLE HEADER
+            mConnectedThread.write("ATH1"+ "\r" + "\n" );//Enable header
             try {
                 Thread.sleep(200);
             } catch (InterruptedException e) {
