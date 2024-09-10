@@ -12,7 +12,7 @@ public class SenderIntakeManifoldAirTemperature extends Thread {
         while (true) {
 
             try {
-                mConnectedThread.write("010F 1" + "\r" + "\n");
+                mConnectedThread.write("010F" + "\r" + "\n");
                 Thread.sleep(500);
             } catch (Exception e) {
                 e.printStackTrace();
