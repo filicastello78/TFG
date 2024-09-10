@@ -12,7 +12,7 @@ public class SenderAirFlowSpeedMaf extends Thread {
         while (true) {
 
             try {
-                mConnectedThread.write("0110 1" + "\r" + "\n");
+                mConnectedThread.write("0110" + "\r" + "\n");
                 Thread.sleep(5);
             } catch (Exception e) {
                 e.printStackTrace();
