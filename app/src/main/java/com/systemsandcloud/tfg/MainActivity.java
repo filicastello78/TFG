@@ -155,7 +155,7 @@ public class MainActivity extends AppCompatActivity {
             double j=0.0;
             int A,B,value=0;
             String readMessage,aux1,aux2="";
-            final ToneGenerator tg = new ToneGenerator(AudioManager.STREAM_NOTIFICATION, 200);
+            
 
             @Override
             public void handleMessage(Message msg) {
