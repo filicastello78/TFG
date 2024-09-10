@@ -13,7 +13,7 @@ public class SenderRpm extends Thread {
 
             try {
                 if ( mConnectedThread != null) {
-                    mConnectedThread.write("010C 1" + "\r" + "\n");                   
+                    mConnectedThread.write("010C" + "\r" + "\n");                   
                     Thread.sleep(5);
                 }
             } catch (Exception e) {
