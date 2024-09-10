@@ -12,7 +12,7 @@ public class SenderIntakeManifoldAbsolutePressure extends Thread {
         while (true) {
 
             try {
-                mConnectedThread.write("010B 1" + "\r" + "\n");
+                mConnectedThread.write("010B" + "\r" + "\n");
                 Thread.sleep(500);
             } catch (Exception e) {
                 e.printStackTrace();
